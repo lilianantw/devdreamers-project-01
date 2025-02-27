@@ -3,7 +3,6 @@
   padding: 80px 0;
   width: 100%;
 }
-
 .reviews-title {
   text-transform: uppercase;
   font-weight: 600;
@@ -25,14 +24,12 @@
   text-align: left;
   width: 100%;
 }
-
 .reviews-list {
   display: flex;
-  justify-content: space-between; /* Можно оставить для распределения */
+  justify-content: space-between; /* Можно оставить для распределения /
   flex-wrap: wrap;
-  gap: 24px; /* Отступы между элементами */
+  gap: 24px; / Отступы между элементами */
 }
-
 .reviews-item {
   /* width: 100%; */
   max-width: 320px;
@@ -42,18 +39,15 @@
   box-sizing: border-box;
   border: 1px solid #d4bfc4;
 }
-
 .reviews-item:nth-child(n + 2) {
   display: none;
 }
-
 .reviews-card {
   border-radius: 72px;
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .title-customer {
   margin-bottom: 8px;
   text-align: center; /* Для текста внутри h3 */
@@ -64,7 +58,6 @@
   text-transform: uppercase;
   color: #141414;
 }
-
 .text-customer {
   font-weight: 500;
   font-size: 14px;
@@ -72,23 +65,25 @@
   text-align: center;
   color: #858585;
   max-width: 288px;
-}
-
-/* Mobile (375) */
+} /* Mobile (375) */
 @media only screen and (min-width: 375px) {
   .container.reviews-container {
     width: 100%;
     padding: 0 20px;
+    max-width: 375px; /*ограничение ширины */
+    margin: 0 auto; /*центрирование */
   }
   .reviews-title {
     font-size: 48px;
   }
+  .reviews-text {
+    max-width: 335px;
+  }
+
   .reviews-item {
     width: 100%;
   }
-}
-
-/* Tablet (768px) */
+} /* Tablet (768px) */
 @media only screen and (min-width: 768px) {
   .container.reviews-container {
     width: 100%;
@@ -98,7 +93,6 @@
   }
   .reviews-list {
     gap: 24px;
-
     max-width: 704px; /* Фиксируем ширину элемента */
   }
   .reviews-title {
@@ -107,11 +101,11 @@
     margin-bottom: 24px;
     width: 553px;
   }
-
   .reviews-text {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 52px;
+    max-width: 553px;
   }
 
   .reviews-item:nth-child(1),
@@ -127,10 +121,7 @@
     line-height: 1.25;
     max-width: 303px;
   }
-}
-
-
-/* Desktop (1280px) */
+} /* Desktop (1280px) */
 @media only screen and (min-width: 1280px) {
   .section-reviews {
     padding: 0;
@@ -144,9 +135,9 @@
   .reviews-list {
     max-width: 1080px;
     /* display: flex;
-    justify-content: space-between; */
+    justify-content: space-between;  */
     gap: 24px;
-    flex-wrap: nowrap; /* Без переноса */
+    flex-wrap: nowrap; /*Без переноса */
   }
   .reviews-item:nth-child(n + 2) {
     display: block;
